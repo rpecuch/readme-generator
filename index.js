@@ -34,13 +34,13 @@ const questions = [
         type: 'list',
         message: 'Choose a license:',
         name: 'license',
-        choices: ['MIT', 'Apache License 2.0', 'GPU GPLv3']
+        choices: ['MIT License', 'Apache License 2.0', 'GPU GPLv3 License']
     }
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.write(fileName, generateMarkdown(data), (err) => err ? console.error(err) : console.log("README successfully generated!")
+    fs.write(fileName, markdown.generateMarkdown(data), (err) => err ? console.error(err) : console.log("README successfully generated!")
     );
 }
 
