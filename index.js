@@ -27,6 +27,24 @@ const questions = [
     },
     {
         type: 'input',
+        message: 'What package is required to run your application?',
+        name: 'package',
+        default: 'inquirer',
+    },
+    {
+        type: 'input',
+        message: 'Enter command to create a package.json:',
+        name: 'json',
+        default: 'npm init'
+    },
+    {
+        type: 'input',
+        message: 'Enter command to install required package:',
+        name: 'install',
+        default: 'npm i inquirer@8.2.4',
+    },
+    {
+        type: 'input',
         message: 'Enter usage information:',
         name: 'usage',
     },
@@ -40,19 +58,24 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.write(fileName, markdown.generateMarkdown(data), (err) => err ? console.error(err) : console.log("README successfully generated!")
-    );
+    //saying that this is not a function
+    markdown.generateMarkdown(data);
+    // fs.write(fileName, markdown.generateMarkdown(data), (err) => err ? console.error(err) : console.log("README successfully generated!")
+    // );
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer  
         .prompt([
-            questions[0], questions[1], questions[2], questions[3], questions[4], questions[5]
+            questions[0], questions[1], questions[2], questions[3], questions[4], questions[5], questions[6], questions[7], questions[8]
         ])
+        .then((data) =>
+            {const fileName = "README.md";
+            writeToFile(fileName, data);
+    }
+        )
         //may need to stringify
-        const fileName = "README.md";
-        writeToFile(fileName, data);
 }
 
 // Function call to initialize app

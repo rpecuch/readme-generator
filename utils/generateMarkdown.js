@@ -62,10 +62,10 @@ function generateMarkdown(data) {
   - [Questions](#questions)
 
   ## Installation\n
-  Run the following command in the command line:
-    npm init
-  Run the following command in the command line:
-    npm i inquirer@8.2.4
+  The ${data.package} package is required to run this application. Run the following command in the command line initialize a new package:
+    ${data.json}
+  Then, run the following command in the command line to install the required package:
+    ${data.install}
 
   ## Usage\n
   ${data.usage}
