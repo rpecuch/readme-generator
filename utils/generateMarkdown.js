@@ -71,7 +71,11 @@ function generateMarkdown(data) {
   ~~~
 
   ## Usage\n
-  ${data.usage}
+  To run this application, enter the following command in the command line:\n
+  ~~~
+  ${data.start}
+  ~~~
+  \n${data.usage}
 
   ${renderLicenseSection(data.license)}.
   To view a description of this license type, click [here](${renderLicenseLink(data.license)}).
@@ -83,7 +87,7 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Questions\n
-  If you have any questions, do not hesitate to view my GitHub profile at [https://github.com/${data.username}](https://github.com/${data.username}) or contact me at ${data.email}.
+  If you have any questions or would like to provide feedback, do not hesitate to view my GitHub profile at [https://github.com/${data.username}](https://github.com/${data.username}) or contact me at ${data.email}.
 `;
 }
 

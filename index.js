@@ -45,6 +45,12 @@ const questions = [
     },
     {
         type: 'input',
+        message: 'Enter command to start your application',
+        name: 'start',
+        default: 'node index',
+    },
+    {
+        type: 'input',
         message: 'Enter usage information:',
         name: 'usage',
     },
@@ -80,7 +86,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer  
         .prompt([
-            questions[0], questions[1], questions[2], questions[3], questions[4], questions[5], questions[6], questions[7], questions[8], questions[9], questions[10]
+            questions[0], questions[1], questions[2], questions[3], questions[4], questions[5], questions[6], questions[7], questions[8], questions[9], questions[10], questions[11]
         ])
         .then((data) =>
             {const fileName = "README.md";

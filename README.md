@@ -1,10 +1,10 @@
-# Generator
+# Professional README Generator
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
 
-description goes here
+enter description
 
   ## Table of Contents
 
@@ -31,21 +31,27 @@ Then, run the following command in the command line to install the required pack
 
   ## Usage
 
-  Usage info goes here
+  To run this application, enter the following command in the command line:
+
+  ~~~
+  node index
+  ~~~
+  
+enter usage info
 
   ## License
 
-  This application is covered under the MIT License
+  This application is covered under the MIT License.
   To view a description of this license type, click [here](https://choosealicense.com/licenses/mit/).
 
   ## Contributing
 
-  Info goes here
+  enter info
   
   ## Tests
 
-  Info goes here
+  enter info
 
   ## Questions
 
-  If you have any questions, do not hesitate to view my GitHub profile at [https://github.com/rpecuch](https://github.com/rpecuch) or contact me at rpecuch@comcast.net.
+  If you have any questions or would like to provide feedback, do not hesitate to view my GitHub profile at [https://github.com/rpecuch](https://github.com/rpecuch) or contact me at rpecuch@comcast.net.
