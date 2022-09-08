@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   const apacheLicense = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-  const gpuLicense = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+  const gnuLicense = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
   const mitLicense = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
   if(license === "MIT License") {
     return mitLicense;
@@ -10,8 +10,8 @@ function renderLicenseBadge(license) {
   else if(license === "Apache License 2.0") {
     return apacheLicense;
   }
-  else if (license === "GPU GPLv3 License") {
-    return gpuLicense;
+  else if (license === "GNU GPLv3 License") {
+    return gnuLicense;
   }
   else {
     return "";
@@ -21,17 +21,17 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  const mitLink = "https://choosealicense.com/licenses/mit/";
-  const gpuLink = "https://choosealicense.com/licenses/gpl-3.0/";
-  const apacheLink = "https://choosealicense.com/licenses/apache-2.0/";
+  const mitLink = "https://opensource.org/licenses/MIT";
+  const gnuLink = "https://www.gnu.org/licenses/gpl-3.0";
+  const apacheLink = "https://opensource.org/licenses/Apache-2.0";
   if(license === "MIT License") {
     return mitLink;
   }
   else if(license === "Apache License 2.0") {
     return apacheLink;
   }
-  else if (license === "GPU GPLv3 License") {
-    return gpuLink;
+  else if (license === "GNU GPLv3 License") {
+    return gnuLink;
   }
   else {
     return "";

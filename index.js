@@ -68,7 +68,7 @@ const questions = [
         type: 'list',
         message: 'Choose a license:',
         name: 'license',
-        choices: ['MIT License', 'Apache License 2.0', 'GPU GPLv3 License']
+        choices: ['MIT License', 'Apache License 2.0', 'GNU GPLv3 License']
     }
 ];
 
