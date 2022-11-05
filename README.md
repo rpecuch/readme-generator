@@ -2,6 +2,10 @@
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+  ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+  ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+  ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
   ## Description
 
 The purpose of this project was to apply Node.js concepts to create a simple but practical application. This application generates a professional README file based on user input, which will allow developers to spend more time on coding. While building this project, I became comfortable using Node.js and learned about the implementation of arrow functions, variable scoping, template literals, and modularization.
