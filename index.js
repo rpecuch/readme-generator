@@ -1,7 +1,8 @@
 // needed packages
 const inquirer = require('inquirer');
-const markdown = require('./utils/generateMarkdown.js');
 const fs = require('fs');
+//import helper fxn
+const markdown = require('./utils/generateMarkdown.js');
 
 // array of questions for user input
 const questions = [
@@ -81,11 +82,13 @@ function writeToFile(fileName, data) {
 // initializes the application
 function init() {
     inquirer  
+        //asks all questions
         .prompt([
             questions[0], questions[1], questions[2], questions[3], questions[4], questions[5], questions[6], questions[7], questions[8], questions[9], questions[10], questions[11]
         ])
         .then((data) =>
             {const fileName = "README.md";
+            //call fxn to create readme with data collected
             writeToFile(fileName, JSON.stringify(data));
     }
         )
